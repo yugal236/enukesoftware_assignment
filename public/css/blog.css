@@ -1,0 +1,172 @@
+
+#blogContainer {
+    background-color: #f7f7f7;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-top: 50px;
+}
+
+.addSection {
+    border: none;
+    border-right: .5px solid #80808099;
+    padding-right: 6px;
+    color: gray;
+    outline: none !important;
+    background-color: #f7f7f7;
+}
+
+.titleSection
+{
+    display:hidden;
+     border: none;
+     border-right: .5px solid #80808099;
+     padding-right: 6px;
+     color: gray;
+     outline: none !important;
+     background-color: #f7f7f7;
+
+}
+
+.icon {
+    border: none;
+    outline: none;
+}
+
+.titleIcon {
+    border: none;
+    outline: none;
+    visibility: hidden
+}
+
+.blogItem {
+    border: none;
+    color: gray;
+    outline: none;
+    background-color: #f7f7f7;
+    margin-left:5px;
+}
+
+.insideMenu {
+    list-style: none;
+    margin-left:5px;
+}
+
+.menu
+{  
+    flex-wrap: wrap;
+}
+
+#mainImage {
+    border: none;
+    border-radius: 100px;
+    padding: 9px 13px;
+    color: gray;
+    outline: none;
+    font-family: sans-serif;
+
+}
+
+#mainImage:hover {
+    color: rgb(75, 75, 241);
+}
+
+.blogItem {
+    border: 1px solid gray;
+    border-radius: 100px;
+    padding: 9px 13px;
+}
+
+.blogItem i {
+    font-size: 1rem;
+
+}
+
+
+
+.blogText {
+    max-width:90%;
+}
+
+
+
+.videoText {
+    font-size: 1.3rem;
+    width: 90%;
+    border: none;
+    background-color: #f7f7f7;
+    outline: none
+}
+.tagBox
+{
+font-size: 1.3rem;
+width: 90%;
+border: none;
+background-color: #f7f7f7;
+outline: none
+
+}
+#titleText {
+    width:100%;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    border: none;
+    background-color: #f7f7f7;
+    outline: none
+}
+
+#category
+{
+    cursor:pointer;
+    background-color:#f7f7f7;
+    
+}
+
+.embedText {
+    font-size: 1.3rem;
+    width: 90%;
+    border: none;
+    background-color: #f7f7f7;
+    outline: none
+}
+
+
+/* For Detailing page */
+
+.main_image
+{
+    width:500px;
+    border-radius: 5px;
+}
+.blog-box
+{
+    list-style:none;
+}
+
+.blogImage img
+{
+    width:200px;
+    border-radius: 2px;
+}
+
+@media screen and (max-width:768px)
+{
+    #blogContainer
+    {
+       padding-left: 20px;
+    }
+    #titleText
+    {
+        font-size: 1rem;
+    }
+    .row
+    {
+        flex-wrap: nowrap !important;
+    }
+    .row>.col-md-1
+    {
+        width:auto !important;
+    }
+}

@@ -1,0 +1,164 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.chatBox {
+    width: 100%;
+    background-color: rgb(237 243 246);
+    min-height: 90vh;  
+    margin: 0px auto;
+    border-radius: 5px;
+
+}
+
+
+.left {
+    width: 100%;
+    margin-left: 10px;
+    word-break: break-all;
+    list-style: none;
+}
+
+.left li {
+    margin-top: 15px;
+    font-size: 20px;
+    background-color: white;
+    padding: 0px 8px;
+    border-radius: 5px;
+    width: fit-content;
+
+}
+
+
+.right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    margin-right: 20px;
+    word-break: break-all;
+    list-style: none;
+
+}
+
+.right li {
+    padding: 0px 8px;
+    width: fit-content;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #bce6c2;
+    margin-bottom: 0px !important;
+    margin-top: 15px;
+}
+
+.left #chat-item1 {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: start;
+    word-break: break-all;
+}
+
+.left #chat-item2 {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    word-break: break-all;
+}
+
+
+
+.send {
+    width: 80%;
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 24px;
+}
+
+.send input {
+    width: 60%;
+    font-size: 20px;
+}
+
+.send button {
+    font-size: 18px;
+    padding: 2px 20px;
+    margin-left: 7px;
+}
+
+
+.user li {
+    list-style: none;
+    padding: 20px 5px;
+}
+
+.user li a {
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.user li a img {
+    width: 50px;
+    height: 45px;
+    box-shadow: 2px 2px 5px rgb(170, 170, 187);
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.user li a span {
+    padding-left: 10px;
+}
+
+.chat-box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#chatInput {
+    border: 2px solid black;
+    padding: 7px;
+    border-radius: 10px 10px;
+    font-size: 20px;
+    width: 60%;
+    margin:0px auto;
+    position: fixed ;
+    bottom: 12px;
+
+}
+
+#chatInput:empty:before {
+    content: attr(data-placeholder);
+    color: gray;
+    cursor:text;
+}
+
+
+
+@media screen and (max-width:768px)
+{
+    .chat-row
+    {
+        flex-wrap: nowrap !important;
+    }
+    /* .sidenav
+    {
+        width: 0px !important;
+    }
+    #main
+    {
+        margin-left:0px !important;
+    } */
+}
+
